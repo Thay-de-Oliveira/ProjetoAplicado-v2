@@ -105,22 +105,17 @@ class _AtendimentoFormsState extends State<AtendimentoForms> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
+                    //Botão CADASTRO
                     GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => TelaPendente()));
-                      },
-                      child: Container(
-                        width: 90,
-                        height: 80,
+                      child: Ink(
                         decoration: ShapeDecoration(
+                          //Estilo
                           color: Color(0xFFBBD8F0),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                           shadows: [
+                            //Sombras
                             BoxShadow(
                               color: Color(0x3F000000),
                               blurRadius: 2,
@@ -129,41 +124,54 @@ class _AtendimentoFormsState extends State<AtendimentoForms> {
                             )
                           ],
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                              width: 30,
-                              height: 30,
-                              child: Image.asset(
-                                  'assets/imagens/icon-cadastro.png'),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AtendimentoForms()));
+                          },
+                          child: Container(
+                            width: 90,
+                            height: 80,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Container(
+                                  //Icone
+                                  width: 30,
+                                  height: 30,
+                                  child: Image.asset(
+                                      'assets/imagens/icon-cadastro.png'),
+                                ),
+                                SizedBox(
+                                    height:
+                                        5.0), //Espaço entre o ícone e o texto
+                                Text(
+                                  'Cadastro',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                                height: 5.0), // Espaço entre o ícone e o texto
-                            Text(
-                              'Cadastro',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
                       ),
                     ),
+
+                    //Botão PENDENTE
                     GestureDetector(
-                      onTap: () {
-                        // Ação a ser executada quando o botão 2 for pressionado
-                      },
-                      child: Container(
-                        width: 90,
-                        height: 80,
+                      child: Ink(
                         decoration: ShapeDecoration(
+                          //Estilo
                           color: Color(0xffffffff),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                           shadows: [
+                            //Sombras
                             BoxShadow(
                               color: Color(0x3F000000),
                               blurRadius: 2,
@@ -172,41 +180,54 @@ class _AtendimentoFormsState extends State<AtendimentoForms> {
                             )
                           ],
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                              width: 30,
-                              height: 30,
-                              child: Image.asset(
-                                  'assets/imagens/icon-pendente.png'),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TelaPendente()));
+                          },
+                          child: Container(
+                            width: 90,
+                            height: 80,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Container(
+                                  //Icone
+                                  width: 30,
+                                  height: 30,
+                                  child: Image.asset(
+                                      'assets/imagens/icon-pendente.png'),
+                                ),
+                                SizedBox(
+                                    height:
+                                        5.0), //Espaço entre o ícone e o texto
+                                Text(
+                                  'Pendente',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                                height: 5.0), // Espaço entre o ícone e o texto
-                            Text(
-                              'Pendente',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
                       ),
                     ),
+
+                    //Botão HISTÓRICO
                     GestureDetector(
-                      onTap: () {
-                        // Ação a ser executada quando o botão 3 for pressionado
-                      },
-                      child: Container(
-                        width: 90,
-                        height: 80,
+                      child: Ink(
                         decoration: ShapeDecoration(
+                          //Estilo
                           color: Color(0xffffffff),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                           shadows: [
+                            //Sombras
                             BoxShadow(
                               color: Color(0x3F000000),
                               blurRadius: 2,
@@ -215,25 +236,39 @@ class _AtendimentoFormsState extends State<AtendimentoForms> {
                             )
                           ],
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            Container(
-                              width: 30,
-                              height: 30,
-                              child: Image.asset(
-                                  'assets/imagens/icon-historico.png'),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TelaHistorico()));
+                          },
+                          child: Container(
+                            width: 90,
+                            height: 80,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Container(
+                                  //Icone
+                                  width: 30,
+                                  height: 30,
+                                  child: Image.asset(
+                                      'assets/imagens/icon-historico.png'),
+                                ),
+                                SizedBox(
+                                    height:
+                                        5.0), //Espaço entre o ícone e o texto
+                                Text(
+                                  'Histórico',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                ),
+                              ],
                             ),
-                            SizedBox(
-                                height: 5.0), // Espaço entre o ícone e o texto
-                            Text(
-                              'Histórico',
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                          ],
+                          ),
                         ),
                       ),
                     ),
