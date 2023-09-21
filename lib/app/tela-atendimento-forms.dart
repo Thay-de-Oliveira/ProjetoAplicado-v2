@@ -185,7 +185,8 @@ class _AtendimentoFormsState extends State<AtendimentoForms> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => TelaPendente()));
+                                    builder: (context) =>
+                                        AtendimentoPendente()));
                           },
                           child: Container(
                             width: 90,

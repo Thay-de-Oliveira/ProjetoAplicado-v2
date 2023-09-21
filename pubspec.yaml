@@ -72,6 +72,9 @@ flutter:
     - assets/imagens/icon-cadastro.png
     - assets/imagens/icon-pendente.png
     - assets/imagens/icon-historico.png
+    - assets/imagens/icon-cadastro-inativo.png
+    - assets/imagens/icon-pendente-ativo.png
+    - assets/imagens/icon-historico-ativo.png
 
   #  - images/a_dot_ham.jpeg
 
