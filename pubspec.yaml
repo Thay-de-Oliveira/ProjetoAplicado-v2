@@ -67,6 +67,12 @@ flutter:
     - assets/imagens/fone-icone.png
     - assets/imagens/cadastro-icone.png
     - assets/imagens/relatórios-icone.png
+    - assets/imagens/icon-baixar.png
+    - assets/imagens/icon-camera.png
+    - assets/imagens/icon-cadastro.png
+    - assets/imagens/icon-pendente.png
+    - assets/imagens/icon-historico.png
+
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
